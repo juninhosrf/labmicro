@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
 body {
+    font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -10,27 +14,31 @@ footer {
     background-color: #1f7a3b;
 }
 
+.about-text {
+    text-align: justify;
+}
+
 .carousel-inner img {
-    width: 100%; /* Mantém a largura total */
-    height: 300px; /* Define uma altura fixa */
-    object-fit: cover; /* Ajusta a imagem sem distorcer */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 .btn-search {
-    background-color: #4bbf8d; /* Cor normal */
+    background-color: #4bbf8d;
     color: white;
     border: none;
     transition: background-color 0.3s ease-in-out;
 }
 
 .btn-search:hover {
-    background-color: #00d17a; /* Cor ao passar o mouse */
+    background-color: #00d17a;
 }
 
 .subscribeBtn {
-    border: 2px solid #3c8f68 !important; /* Verde Bootstrap */
+    border: 2px solid #3c8f68 !important;
     padding: 4px 12px;
     border-radius: 5px;
-    color: #3c8f68 !important; /* Verde Bootstrap */
+    color: #3c8f68 !important;
     text-decoration: none;
     display: inline-block;
     background-color: transparent;
