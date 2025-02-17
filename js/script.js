@@ -1,9 +1,8 @@
 function loadComponent(id, file) {
-    let basePath = window.location.hostname.includes("github.io") ? "/labmicro/" : "/";
+    let basePath = window.location.hostname.includes("github.io") ? "/labmicro/" : "";
 
     let pathPrefix = window.location.pathname.includes("/pages/") ? "../" : "";
     
-    // Se estiver no GitHub Pages, corrige o caminho absoluto
     if (window.location.hostname.includes("github.io")) {
         pathPrefix = basePath;
     }
@@ -22,7 +21,14 @@ function loadComponent(id, file) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    loadComponent("navbar", "pages/navbar.html");
-    loadComponent("footer", "pages/footer.html");
-});
+    let baseURL = window.location.hostname.includes("github.io") ? "/labmicro/" : "";
 
+    document.querySelectorAll(".nav-link").forEach(link => {
+        if (link.getAttribute("href") === "/") {
+            link.setAttribute("href", baseURL);
+        }
+    });
+
+    loadComponent("navbar", baseURL + "pages/navbar.html");
+    loadComponent("footer", baseURL + "pages/footer.html");
+});
