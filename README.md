@@ -7,7 +7,7 @@
 **Micro na Prática** é um site voltado para microbiologia, criado para compartilhar conteúdos, pesquisas e curiosidades. 
 
 
-🔗 **Acesse o site:** [Micro na Prática](https://juninhosrf.github.io/micro-na-pratica/)
+🔗 **Acesse o site:** [Micro na Prática](https://juninhosrf.github.io/labmicro/)
 
 ## 🌟 Funcionalidades
 - **Página Inicial** → Apresentação do site.
