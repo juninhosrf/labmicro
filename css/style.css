@@ -8,10 +8,18 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+main {
+    flex: 1;
+}
 
 footer {
     margin-top: auto;
     background-color: #1f7a3b;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
 }
 
 .about-text {
